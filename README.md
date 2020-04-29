@@ -17,6 +17,6 @@
 Leia a documentação disponível no documento AvaliacaoJava_SVA.docx.
 
 ## Método de entrega
-
+* Coloque seu nome e outras informações que desejar no o arquivo candidato.txt
 * Faça os seus commits e o push para o seu repositório.
 * Envie o link do repositório para a pessoa que solicitou a realização do teste.
