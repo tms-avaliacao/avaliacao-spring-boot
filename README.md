@@ -1,10 +1,22 @@
 # Avaliação Java SVA
 
-Tecnologias presentes na prova:  
+## Tecnologias presentes na prova:  
 
 * Spring Boot  
 * Theme Leaf  
 * Spring Data  
 * BootStrap  
 
-Utilize o documento AvaliacaoJava_SVA.docx para realizar a prova
+## Por onde começar
+
+* Realize um fork do projeto no github na sua conta
+* Clone o projeto em seu computador
+
+## Como fazer
+
+Leia a documentação disponível no documento AvaliacaoJava_SVA.docx.
+
+## Método de entrega
+
+* Faça os seus commits e o push para o seu repositório.
+* Envie o link do repositório para a pessoa que solicitou a realização do teste.
