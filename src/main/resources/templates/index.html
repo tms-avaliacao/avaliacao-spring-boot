@@ -27,6 +27,8 @@
 										<th>Nome</th>
 										<th>Email</th>
 										<th>Telefone</th>
+										<th>Matrícula</th>
+										<th>Curso</th>
 										<th>Editar</th>
 										<th>Apagar</th>
 									</tr>
@@ -36,8 +38,10 @@
 										<td th:text="${estudante.nome}"></td>
 										<td th:text="${estudante.email}"></td>
 										<td th:text="${estudante.telefone}"></td>
+										<td th:text="${estudante.matricula}"></td>
+										<td th:text="${estudante.curso}"></td>
 										<td><a th:href="@{/estudantes/editar/{id}(id=${estudante.id})}" class="btn btn-primary"><i class="fas fa-user-edit ml-2"></i></a></td>
-										<td><a th:href="@{/estudantes/apagar/{id}(id=${estudante.id})}" class="btn btn-primary"><i class="fas fa-user-times ml-2"></i></a></td>
+										<td><a th:href="@{/estudantes/apagar/{id}(id=${estudante.id})}" class="btn btn-danger"><i class="fas fa-user-times ml-2"></i></a></td>
 									</tr>
 								</tbody>
 							</table>

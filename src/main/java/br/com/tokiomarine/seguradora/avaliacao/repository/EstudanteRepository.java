@@ -2,13 +2,13 @@ package br.com.tokiomarine.seguradora.avaliacao.repository;
 
 import java.util.List;
 
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import br.com.tokiomarine.seguradora.avaliacao.entidade.Estudante;
 
-@Repository
-public interface EstudanteRepository {
+public interface EstudanteRepository extends JpaRepository<Estudante, Long>{
 
-	List<Estudante> findByName(String name);
+	//Implementação de método de busca pelo campo nome
+	List<Estudante> findByNome(String nome);
 
 }
