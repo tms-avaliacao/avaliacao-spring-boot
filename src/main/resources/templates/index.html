@@ -16,7 +16,8 @@
 			<div class="card-body">
 				<div th:switch="${estudantes}" class="container my-5">
 					<p class="my-5">
-						<a href="/estudantes/criar" class="btn btn-primary"><i class="fas fa-user-plus ml-2"> Adicionar Estudante</i></a>
+						<a href="/estudantes/criar" class="btn btn-primary">
+						<i class="fas fa-user-plus ml-2"> Adicionar Estudante</i></a>
 					</p>
 					<div class="col-md-10">
 						<h2 th:case="null">Nenhum estudante cadastrado</h2>

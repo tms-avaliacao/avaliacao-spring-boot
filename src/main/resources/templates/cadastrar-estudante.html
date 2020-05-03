@@ -26,16 +26,16 @@
 							<div class="form-group col-md-8">
 								<label for="nome" class="col-form-label">Nome</label> <input
 									type="text" th:field="*{nome}" class="form-control" id="nome"
-									placeholder="Nome"> <span
-									th:if="${#fields.hasErrors('nome')}" th:errors="*{nome}"
-									class="text-danger"></span>
+									placeholder="Nome"> 
+									<span th:if="${#fields.hasErrors('nome')}" th:errors="*{nome}"
+										class="text-danger">O nome não pode ser vazio.</span>
 							</div>
 							<div class="form-group col-md-8">
 								<label for="email" class="col-form-label">Email</label> <input
 									type="email" th:field="*{email}" class="form-control" id="email"
-									placeholder="Email"> <span
-									th:if="${#fields.hasErrors('email')}" th:errors="*{email}"
-									class="text-danger"></span>
+									placeholder="Email"> 
+									<span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"
+									class="text-danger">O email não pode ser vazio.</span>
 							</div>
 
 							<div class="form-group col-md-8">
@@ -49,9 +49,9 @@
 							<div class="form-group col-md-8">
 								<label for="telefone" class="col-form-label">Matrícula</label> <input
 									type="text" th:field="*{matricula}" class="form-control"
-									id="matricula" placeholder="Matrícula"> <span
-									th:if="${#fields.hasErrors('matricula')}" th:errors="*{matricula}"
-									class="text-danger"></span>
+									id="matricula" placeholder="Matrícula"> 
+									<span th:if="${#fields.hasErrors('matricula')}" th:errors="*{matricula}"
+									class="text-danger">A matrícula não pode ser vazia.</span>
 							</div>
 							
 							<div class="form-group col-md-8">

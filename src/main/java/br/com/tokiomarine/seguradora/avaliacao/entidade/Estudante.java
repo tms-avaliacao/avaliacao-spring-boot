@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 /**
@@ -20,14 +21,17 @@ public class Estudante {
 	
 	@Column(nullable = false)
 	@NotNull(message = "O nome é obrigatório.")
+	@NotEmpty(message = "O nome é obrigatório.")
 	private String nome;
 	
 	@Column(nullable = false)
 	@NotNull(message = "O email é obrigatório.")
+	@NotEmpty(message = "O email é obrigatório.")
 	private String email;
 	
 	@Column(nullable = false)
 	@NotNull(message = "A matrícula é obrigatória.")
+	@NotEmpty(message = "A matrícula é obrigatória.")
 	private String matricula;
 	
 	private String curso;
