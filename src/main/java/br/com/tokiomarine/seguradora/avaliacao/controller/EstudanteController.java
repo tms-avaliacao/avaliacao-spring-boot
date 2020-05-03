@@ -55,7 +55,7 @@ public class EstudanteController {
 			return "atualizar-estudante";
 		}
 
-		estudante.setId(id);
+//		estudante.setId(id);
 		service.atualizarEstudante(estudante);
 		return "redirect:/estudantes/listar";
 	}
