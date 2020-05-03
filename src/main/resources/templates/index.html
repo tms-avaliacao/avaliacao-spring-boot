@@ -16,7 +16,8 @@
 			<div class="card-body">
 				<div th:switch="${estudantes}" class="container my-5">
 					<p class="my-5">
-						<a href="/estudantes/criar" class="btn btn-primary"><i class="fas fa-user-plus ml-2"> Adicionar Estudante</i></a>
+						<a href="/estudantes/criar" class="btn btn-primary">
+						<i class="fas fa-user-plus ml-2"> Adicionar Estudante</i></a>
 					</p>
 					<div class="col-md-10">
 						<h2 th:case="null">Nenhum estudante cadastrado</h2>
@@ -27,6 +28,8 @@
 										<th>Nome</th>
 										<th>Email</th>
 										<th>Telefone</th>
+										<th>Matrícula</th>
+										<th>Curso</th>
 										<th>Editar</th>
 										<th>Apagar</th>
 									</tr>
@@ -36,8 +39,10 @@
 										<td th:text="${estudante.nome}"></td>
 										<td th:text="${estudante.email}"></td>
 										<td th:text="${estudante.telefone}"></td>
+										<td th:text="${estudante.matricula}"></td>
+										<td th:text="${estudante.curso}"></td>
 										<td><a th:href="@{/estudantes/editar/{id}(id=${estudante.id})}" class="btn btn-primary"><i class="fas fa-user-edit ml-2"></i></a></td>
-										<td><a th:href="@{/estudantes/apagar/{id}(id=${estudante.id})}" class="btn btn-primary"><i class="fas fa-user-times ml-2"></i></a></td>
+										<td><a th:href="@{/estudantes/apagar/{id}(id=${estudante.id})}" class="btn btn-danger"><i class="fas fa-user-times ml-2"></i></a></td>
 									</tr>
 								</tbody>
 							</table>

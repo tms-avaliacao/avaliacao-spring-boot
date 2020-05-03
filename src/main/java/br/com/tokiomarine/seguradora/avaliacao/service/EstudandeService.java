@@ -10,6 +10,8 @@ public interface EstudandeService {
 
 	List<Estudante> buscarEstudantes();
 
+	void apagarEstudante(Estudante estudante);
+	
 	void cadastrarEstudante(@Valid Estudante estudante);
 
 	Estudante buscarEstudante(long id);

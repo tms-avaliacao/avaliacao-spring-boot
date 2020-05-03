@@ -1,6 +1,9 @@
 package br.com.tokiomarine.seguradora.avaliacao.controller;
 
+import org.springframework.web.bind.annotation.RestController;
+
 // TODO não esquecer de usar as anotações para criação do restcontroller
+@RestController
 public class EstudanteRestController {
 
 	// TODO caso você não conheça THEMELEAF faça a implementação dos métodos em forma de RESTCONTROLLER (seguindo o padrão RESTFUL)
